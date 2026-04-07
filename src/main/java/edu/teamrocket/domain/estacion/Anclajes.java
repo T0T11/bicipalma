@@ -1,7 +1,8 @@
 package edu.teamrocket.domain.estacion;
 
+import edu.teamrocket.domain.tarjetausuario.TarjetaUsuario;
 import edu.teamrocket.domain.bicicleta.Movil;
-import edu.teamrocket.domain.estacion.Anclaje;
+
 
 import java.util.Arrays;
 
