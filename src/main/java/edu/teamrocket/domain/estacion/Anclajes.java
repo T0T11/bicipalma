@@ -35,6 +35,10 @@ public class Anclajes {
          return anclajes[posicion].getBici();
     }
 
+    public void liberarAnclaje(int posicion){
+        anclajes[posicion].liberarBici();
+    }
+
     public int seleccionarAnclaje(){
         for (int i = 0; i < anclajes.length; i++) {
             if (!anclajes[i].isOcupado()) { /*el ! = si no, es para que te de lo contrario sabiendo que si o si te tiene
