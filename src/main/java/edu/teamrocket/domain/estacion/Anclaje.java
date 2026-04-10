@@ -9,7 +9,7 @@ public class Anclaje {
 
     public Anclaje(){
         this.ocupado = false;
-        this.bici = null;
+        this.bici = null; /*cambiar a optional*/
     }
 
     public boolean isOcupado() {
