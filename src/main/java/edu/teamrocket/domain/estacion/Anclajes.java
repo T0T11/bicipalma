@@ -1,6 +1,7 @@
 package edu.teamrocket.domain.estacion;
 
-import edu.teamrocket.domain.tarjetausuario.TarjetaUsuario;
+import edu.teamrocket.domain.*;
+
 import edu.teamrocket.domain.bicicleta.Movil;
 
 
@@ -8,7 +9,7 @@ import java.util.Arrays;
 
 public class Anclajes {
 
-    private Anclaje[] anclajes; /* hago un array llamado anclajes lleno de objetos llamado Anclaje*/
+    private final Anclaje[]  anclajes; /* hago un array llamado anclajes lleno de objetos llamado Anclaje*/
 
     public Anclajes(int numAnclajes){
         this.anclajes = new Anclaje[numAnclajes];
