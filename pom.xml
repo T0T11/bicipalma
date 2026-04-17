@@ -28,6 +28,26 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <source>21</source> <!-- O tu versión de Java -->
+                        <target>21</target>
+                        <compilerArgs>
+                            <arg>-XDcompilePolicy=simple</arg>
+                            <arg>-Xplugin:ErrorProne</arg>
+                        </compilerArgs>
+                        <annotationProcessorPaths>
+                            <path>
+                                <groupId>com.google.errorprone</groupId>
+                                <artifactId>error_prone_core</artifactId>
+                                <version>2.26.1</version> <!-- Usa la última versión -->
+                            </path>
+                        </annotationProcessorPaths>
+                    </configuration>
+                </plugin>
 
                     <plugin>
                         <groupId>org.jacoco</groupId>
